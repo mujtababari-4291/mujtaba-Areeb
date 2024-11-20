@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <header>
+        <h1>T-Shirt Shop</h1>
+        <p>Welcome to our online store! Browse and buy your favorite t-shirts.</p>
+        <div class="contact-info">
+            <p>Contact us: 03170104291</p>
+        </div>
+    </header>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product" id="product1">
+            <img src="tshirt1.jpg" alt="T-Shirt 1">
+            <h3>Classic T-Shirt</h3>
+            <p>$15.00</p>
+            <button onclick="addToCart('Classic T-Shirt', 15)">Add to Cart</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="tshirt2.jpg" alt="T-Shirt 2">
+            <h3>Graphic T-Shirt</h3>
+            <p>$20.00</p>
+            <button onclick="addToCart('Graphic T-Shirt', 20)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-list">
+            <!-- Cart items will appear here -->
+        </ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button onclick="placeOrder()">Place Order</button>
+        <button onclick="clearCart()">Cancel Order</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 T-Shirt Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
